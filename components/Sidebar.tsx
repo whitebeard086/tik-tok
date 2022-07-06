@@ -6,13 +6,15 @@ import { AiFillHome, AiOutlineMenu } from "react-icons/ai";
 import { ImCancelCircle } from "react-icons/im";
 import { useState } from "react";
 
+import { Discover, SuggestedAccounts, Footer } from ".";
+
 const Sidebar = () => {
   const [showSidebar, setShowSidebar] = useState(true);
 
   const userProfile = false;
 
   const normalLink =
-    "flex items-center gap-3 hover:bg-primary p-3 justify-center xl:justify-start cursor-pointer font-semibold text-[#F51997] rounded-full";
+    "flex items-center gap-3 hover:bg-primary p-3 justify-center xl:justify-start cursor-pointer font-semibold text-[#F51997] rounded";
 
   return (
     <div>
@@ -58,7 +60,8 @@ const Sidebar = () => {
           )}
 
           <Discover />
-          <SuggestedAcco
+          <SuggestedAccounts />
+          <Footer />
         </div>
       )}
     </div>
