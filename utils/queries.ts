@@ -11,7 +11,7 @@ export const allPostsQuery = () => {
       userId,
       postedBy->{
         _id,
-        userName,
+        username,
         image
       },
     likes,
